@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.numero{
+    font-size: 20px;
+}
+
+body {
+    background-color: red;
+}
+
+header{
+    background-color: yellow;
+}
