@@ -13,3 +13,8 @@ app.listen(3000, () => {
 app.get('/vistaTurnos', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/vistaTurnos.html'))
 })
+
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/login.html'))
+})
+
