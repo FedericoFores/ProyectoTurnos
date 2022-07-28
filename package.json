@@ -1,0 +1,23 @@
+{
+  "name": "proyectoturnos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoFores/ProyectoTurnos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoFores/ProyectoTurnos/issues"
+  },
+  "homepage": "https://github.com/FedericoFores/ProyectoTurnos#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
