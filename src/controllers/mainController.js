@@ -1,6 +1,6 @@
 const path = require("path");
 const controlador = {
-    vistaTurnos:(req,res) => {res.render("vistaTurnos")},
+    index:(req,res) => {res.render("vistaTurnos.ejs")},
     login:(req,res) => {res.render("login")},
 }
 
