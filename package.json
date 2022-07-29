@@ -16,8 +16,9 @@
   },
   "homepage": "https://github.com/FedericoFores/ProyectoTurnos#readme",
   "keywords": [],
-  "description": "",
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
