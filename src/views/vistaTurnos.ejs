@@ -6,48 +6,30 @@
     <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
-    <header>
-        <div class="divSuperiorHead">
-            <img class="logo" src="" alt="logo">
-        </div>
-
-        <div class="mainNavBar">
-            <ul class="seccionesPagina">
-                <li><a href="#">Turnos</a></li>
-                <li><a href="#">Opciones de turnos</a></li>
-                <li><a href="#">Iniciar Sesión</a></li>
-            </ul>
-        </div>
-    </header>
+    <%- include('./partials/header') %>
     <main>
-        <section class="titulosCuadrados">
-            <article>
-                <div class="numero">
-                    <h3>Numero</h3>
-                </div>
-                <div class="numeroTurno">
-                    <h4>F777</h4>
-                </div>
-            </article>
-
-            <article>
-                <div class="sector">
-                    <h3>Sector</h3>
-                </div>
-                <div class="sectorTurno">
-                    <h4>Finanzas</h4>
-                </div>
-            </article>
-
-            <article>
-                <div class="puesto">
-                    <h3>Puesto</h3>
-                </div>
-                <div class="puestoTurno">
-                    <h4>1</h4>
-                </div>
-            </article>
-        </section>
+        <table>
+            <tr>
+              <th>Numero</th>
+              <th>Sector</th>
+              <th>Puesto</th>
+            </tr>
+            <tr>
+              <td>F77</td>
+              <td>Finanzas</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Y84</td>
+              <td>Pagos</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>H58</td>
+              <td>Caja</td>
+              <td>3</td>
+            </tr>
+          </table>
     </main>
 </body>
 </html>
