@@ -1,12 +1,11 @@
 const express = require ("express")
-const path = require("path")
 const app = express()
-const PORT = process.env.PORT || 3000;
-
-let rutasMain = require('./routes/main.js');
-
-app.use('/', rutasMain);
-
-app.use(express.static(path.join(__dirname,"../","public")))
-
-app.listen(PORT, () => console.log("Servidor Funcionando"))
+const path = require ("path");
+const mainRoutes = require ("./routes/mainRoutes");
+app.use(express.static(path.join(__dirname,"../public")));
+app.set ('view engine','ejs');
+app.set ("views",path.join(__dirname,"/views"));
+app.use('/',mainRoutes);
+app.listen(3000, () =>{
+     console.log("Servidor Funcionando en 3000")
+});
