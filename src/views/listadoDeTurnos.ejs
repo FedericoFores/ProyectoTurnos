@@ -9,30 +9,18 @@
     <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
-    <header>
-        <div class="divSuperiorHead">
-            <img class="logo" src="" alt="logo">
-        </div>
-
-        <div class="mainNavBar">
-            <ul class="seccionesPagina">
-                <li><a href="#">Turnos</a></li>
-                <li><a href="#">Opciones de turnos</a></li>
-                <li><a href="#">Iniciar Sesión</a></li>
-            </ul>
-        </div>
-    </header>
+    <%- include('./partial/header') %>
     <main>
         <section class="botones">
             <article>
                 <div class="nuevoTurno">
-                    <a href="#">Nuevo Turno</a>
+                    <input class="botonNuevoTurno" href="" type="submit" value="Nuevo Turno">
                 </div>
             </article>
 
             <article>
                 <div class="proximoTurno">
-                    <a href="#">Proximo Turno</a> 
+                    <input class="botonProximoTurno" href="" type="submit" value="Proximo Turno">
                 </div>
             </article>
         </section>
