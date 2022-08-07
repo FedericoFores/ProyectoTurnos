@@ -4,7 +4,11 @@
   "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "nodemon server.js"
+=======
+    "start": "nodemon ./src/app.js"
+>>>>>>> 3da451c3ade4c290f0b04120eebcce85958ce51d
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,10 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "mysql": "^2.18.1",
+<<<<<<< HEAD
     "mysql2": "^2.3.3",
+=======
+>>>>>>> 3da451c3ade4c290f0b04120eebcce85958ce51d
     "nodemon": "^2.0.19"
   },
   "description": ""
