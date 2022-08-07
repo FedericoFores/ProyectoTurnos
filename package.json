@@ -1,0 +1,28 @@
+{
+  "name": "proyectoturnos",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoFores/ProyectoTurnos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoFores/ProyectoTurnos/issues"
+  },
+  "homepage": "https://github.com/FedericoFores/ProyectoTurnos#readme",
+  "keywords": [],
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19"
+  },
+  "description": ""
+}
