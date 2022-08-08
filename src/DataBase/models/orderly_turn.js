@@ -8,22 +8,22 @@ module.exports = (sequelize, dataTypes) => {
                 allowNull: false
             },
             code: {
-                type: DataTypes.STRING(4),
+                type: dataTypes.STRING(4),
                 allowNull: false
             },
             box: {
-                type: DataTypes.TEXT(),
+                type: dataTypes.TEXT(),
                 allowNull: false,
                 isEmail: true
             },
             created_at:{
-                type: DataTypes.DATE
+                type: dataTypes.DATE
             },
             updated_at:{
-                type: DataTypes.DATE
+                type: dataTypes.DATE
             },
             deleted_at:{
-                type: DataTypes.DATE
+                type: dataTypes.DATE
             },
 
         },
