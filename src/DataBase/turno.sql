@@ -24,11 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orderly_turn`
---
 
-CREATE Database if not exists "Sistema Turnos"
-use "Sistema Turnos";
+
+CREATE Database if not exists `sistematurnos`;
+use `sistematurnos`;
 
 CREATE TABLE `orderly_turn` (
   `id` smallint(6) UNSIGNED AUTO_INCREMENT NOT NULL,
@@ -36,7 +35,8 @@ CREATE TABLE `orderly_turn` (
   `box` text NOT NULL,
   `created_at` date NOT NULL,
   `updated_at` date NOT NULL,
-  `deleted_at` date NOT NULL
+  `deleted_at` date NOT NULL,
+   	PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -51,10 +51,6 @@ CREATE TABLE `users` (
   `email` text NOT NULL,
   `password` text NOT NULL,
   `created_at` date NOT NULL,
-  `updated_at` date NOT NULL
+  `updated_at` date NOT NULL,
+   	PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
