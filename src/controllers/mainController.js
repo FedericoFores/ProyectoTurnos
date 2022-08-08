@@ -1,7 +1,11 @@
 const baseDeDatos = require("../database/models")
 const path = require ("path");
 const controlador = {
-    index:(req,res) => {res.render("vistaTurnos.ejs")},
+    index:async(req,res) => {
+        let listadoDeTurnos = await baseDeDatos.orderly_turn.findAll({
+            limit:3
+        })
+        res.render("vistaTurnos.ejs", {listadoDeTurnos})},
     login:(req,res) => {res.render("login")},
     listadoDeTurnos:(req,res) => {res.render("listadoDeTurnos")},
     turno:async(req,res) => {
@@ -12,7 +16,9 @@ const controlador = {
     await baseDeDatos.orderly_turn.create({
         code:turno, box:""
     })
-    return turno}
+    return res.json({
+        codigo:turno
+    })}
 }
 
 module.exports = controlador;

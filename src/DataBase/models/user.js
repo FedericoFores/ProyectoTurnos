@@ -8,23 +8,23 @@ module.exports = (sequelize, dataTypes) => {
                 allowNull: false
             },
             name: {
-                type: DataTypes.STRING(25),
+                type: dataTypes.STRING(25),
                 allowNull: false
             },
             email: {
-                type: DataTypes.TEXT(),
+                type: dataTypes.TEXT(),
                 allowNull: false,
                 isEmail: true
             },
             password: {
-                type: DataTypes.TEXT(),
+                type: dataTypes.TEXT(),
                 allowNull: false
             },
             created_at:{
-                type: DataTypes.DATE
+                type: dataTypes.DATE
             },
             updated_at:{
-                type: DataTypes.DATE
+                type: dataTypes.DATE
             }
 
         },

@@ -10,25 +10,18 @@
         <table>
             <tr>
               <th>Numero</th>
-              <th>Sector</th>
-              <th>Puesto</th>
             </tr>
+            <% for(turno of listadoDeTurnos){
+              
+            %>
             <tr>
-              <td>F77</td>
-              <td>Finanzas</td>
-              <td>1</td>
+              <td><%= turno.code %></td>
             </tr>
-            <tr>
-              <td>Y84</td>
-              <td>Pagos</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>H58</td>
-              <td>Caja</td>
-              <td>3</td>
-            </tr>
+            <%
+            }
+            %>
           </table>
+          <script src = "/javascript/vistaTurnos.js"></script>
     </main>
 </body>
 </html>
