@@ -11,12 +11,22 @@
         <table>
             <tr>
               <th>Numero</th>
-            </tr>
+              <th>Sector</th>
             <% for(turno of listadoDeTurnos){
-              
+
             %>
             <tr>
               <td><%= turno.code %></td>
+            </tr>
+            <%
+            }
+            %>
+            <tr>
+            <% for(sector of listadoDeTurnos){
+              
+            %>
+            <tr>
+              <td><%= sector.box %></td>
             </tr>
             <%
             }

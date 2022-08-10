@@ -19,13 +19,23 @@ const controlador = {
     return res.json({
         codigo:turno
     })},
+    sector:async(req,res) => {
+        const letra = ['CAJA','COBRANZAS','RECEPCION'];
+        let letraAleatoria = letra[Math.floor(Math.random() * [2])];
+        let sector = `${letraAleatoria}`
+        await baseDeDatos.orderly_turn.create({
+            box:sector, box:""
+        })
+        return res.json({
+            codigo:sector
+        })},
     add: function (req,res){
         res.render ("Iniciar sesión");
     },
     create: function(req,res) {
         baseDeDatos.users.create({
-        name:req.body.txtNombre,
-        password:req.body.txtContraseña,
+        name:req.body.txtNombr,
+        password:req.body.txtContraseña
     });
     res.redirect ("/");
     }

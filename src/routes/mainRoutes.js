@@ -7,6 +7,7 @@ router.get('/',mainController.index);
 router.get('/login',mainController.login);
 router.get('/listadoDeTurnos',mainController.listadoDeTurnos);
 router.get('/admin/turno',mainController.turno);
+router.get('/admin/sector',mainController.sector);
 
 router.post('/login',mainController.login);
 
