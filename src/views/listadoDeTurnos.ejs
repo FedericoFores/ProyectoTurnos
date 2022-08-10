@@ -4,12 +4,13 @@
     <%-include('./partials/header') %>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/listadoDeTurnos.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
     <main>
         <section class="botones">
             <article>
-                <div>
+                <div class="nuevoTurno">
                     <input id = botonGenerarTurno class="button botones" type="button" value="Generar Turno">
                 </div> 
             </article>
@@ -23,5 +24,6 @@
         <script src = "/javascript/listadoDeTurnos.js">
         </script>
     </main>
+    <%-include('./partials/footer') %>
 </body>
 </html>

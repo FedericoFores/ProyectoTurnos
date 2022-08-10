@@ -21,6 +21,8 @@
     width: 100%;
     border: none;
     margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .proximoTurno{
@@ -32,4 +34,6 @@
     width: 100%;
     border: none;
     margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
 }

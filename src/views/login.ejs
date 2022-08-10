@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <%-include('./partials/header') %>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
-    <body>
-        <main>
-            <div class="Inicio">
-                <h3>Iniciar sesión</h3>
-            </div>
+<body>
+    <main>
+        <div class="Inicio">
+            <h3>Iniciar sesión</h3>
+        </div>
     
-            <form id="formularioLogin" action="" method="">
-                <div>
-                    <input class="Usuario" type="text" id="txtNombre" name="user" placeholder="Nombre de Usuario" 
-                    >
-                    <input class="Usuario" type="password" id="txtContraseña" name="pass" placeholder="Elegí tu contraseña"
-                    >
-                </div>
-                <div id = "GrabarPassword">
-                    <input type="radio" name="profile">
-                    <label for="buy">Recuérdame</label>
-                </div>
+        <form id="formularioLogin" action="" method="">
+            <div>
+                <input class="Usuario" type="text" id="txtNombre" name="user" placeholder="Nombre de Usuario" 
+                >
+                <input class="Usuario" type="password" id="txtContraseña" name="pass" placeholder="Elegí tu contraseña"
+                >
+            </div>
+            <div id = "GrabarPassword">
+                <input type="radio" name="profile">
+                <label for="buy">Recuérdame</label>
+            </div>
                 <input class="botonRegistro" href="" type="submit" value="Registrarme">
                 <input class="botonpassword" href=" " type="submit" value="¿Olvidaste tu contraseña?">
                 <p class="warnings" id="warnings"></p>
-            </form>
-            <script src= "/javascript/loginValidacion.js"></script>
-        </main>
-    </body>
+        </form>
+        <script src= "/javascript/loginValidacion.js"></script>
+    </main>
+    <%-include('./partials/footer') %>
+</body>
 </html>
