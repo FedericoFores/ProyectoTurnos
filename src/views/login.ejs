@@ -12,16 +12,14 @@
             <h3>Iniciar sesión</h3>
         </div>
     
-        <form id="formularioLogin" action="" method="POST">
+        <form id="formularioLogin" action="/" method="POST">
             <div>
-                <input class="Usuario" type="text" id="txtNombre" name="user" placeholder="Nombre de Usuario" 
-                >
-                <input class="Usuario" type="password" id="txtContraseña" name="pass" placeholder="Elegí tu contraseña"
-                >
+                <input class="Usuario" type="text" id="txtNombre" name="name" placeholder="Nombre de Usuario">
+                <input class="Usuario" type="password" id="txtContraseña" name="password" placeholder="Elegí tu contraseña">
             </div>
             <div id = "GrabarPassword">
-                <input type="radio" name="profile">
                 <label for="buy">Recuérdame</label>
+                <input type="radio" name="profile">
             </div>
                 <input class="botonRegistro" href="/listadoDeTurnos" type="submit" value="Registrarme">
                 <input class="botonpassword" href=" " type="submit" value="¿Olvidaste tu contraseña?">

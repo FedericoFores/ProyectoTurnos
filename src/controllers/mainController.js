@@ -24,8 +24,8 @@ const controlador = {
     },
     create: function(req,res) {
         baseDeDatos.users.create({
-        name:req.body.user,
-        password:req.body.pass,
+        name:req.body.txtNombre,
+        password:req.body.txtContraseña,
     });
     res.redirect ("/");
     }

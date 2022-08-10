@@ -17,6 +17,6 @@ router.get('/login', function(req, res){
 })
 
 router.get ("/add",mainController.add);
-router.get ("/add",mainController.create);
+router.post ("/add",mainController.create);
 
 module.exports = router;
