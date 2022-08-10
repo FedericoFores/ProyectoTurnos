@@ -12,10 +12,12 @@
                 <h3>Iniciar sesión</h3>
             </div>
     
-            <form action="" method="">
+            <form id="formularioLogin" action="" method="">
                 <div>
-                    <input class="Usuario" type="text" name="user" placeholder="Nombre de Usuario">
-                    <input class="Usuario" type="password" name="pass" placeholder="Elegí tu contraseña">
+                    <input class="Usuario" type="text" id="txtNombre" name="user" placeholder="Nombre de Usuario" 
+                    >
+                    <input class="Usuario" type="password" id="txtContraseña" name="pass" placeholder="Elegí tu contraseña"
+                    >
                 </div>
                 <div id = "GrabarPassword">
                     <input type="radio" name="profile">
@@ -23,8 +25,9 @@
                 </div>
                 <input class="botonRegistro" href="" type="submit" value="Registrarme">
                 <input class="botonpassword" href=" " type="submit" value="¿Olvidaste tu contraseña?">
+                <p class="warnings" id="warnings"></p>
             </form>
+            <script src= "/javascript/loginValidacion.js"></script>
         </main>
-    
     </body>
 </html>
