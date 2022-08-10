@@ -18,7 +18,17 @@ const controlador = {
     })
     return res.json({
         codigo:turno
-    })}
+    })},
+    add: function (req,res){
+        res.render ("Iniciar sesión");
+    },
+    create: function(req,res) {
+        baseDeDatos.users.create({
+        name:req.body.user,
+        password:req.body.pass,
+    });
+    res.redirect ("/");
+    }
 }
 
 module.exports = controlador;
