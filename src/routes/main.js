@@ -16,5 +16,7 @@ router.get('/login', function(req, res){
     res.sendFile((path.join(__dirname, "../", "views", "login.html")))
 })
 
+router.get ("/add",mainController.add);
+router.get ("/add",mainController.create);
 
 module.exports = router;
