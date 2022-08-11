@@ -7,7 +7,7 @@ router.get('/',mainController.index);
 router.get('/login',mainController.login);
 router.get('/listadoDeTurnos',mainController.listadoDeTurnos);
 router.get('/admin/turno',mainController.turno);
-router.get('/admin/sector',mainController.sector);
+router.get('/admin/proximoTurno',mainController.proximoTurno)
 //router.get('/add',mainController.add);
 router.post('/login/add', mainController.create);
 module.exports = router

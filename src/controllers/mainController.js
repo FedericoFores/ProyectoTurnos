@@ -19,16 +19,6 @@ const controlador = {
     return res.json({
         codigo:turno
     })},
-    sector:async(req,res) => {
-        const letra = ['CAJA','COBRANZAS','RECEPCION'];
-        let letraAleatoria = letra[Math.floor(Math.random() * [2])];
-        let sector = `${letraAleatoria}`
-        await baseDeDatos.orderly_turn.create({
-            box:sector, box:""
-        })
-        return res.json({
-            codigo:sector
-        })},
     add: function (req,res){
         res.render ("Iniciar sesionesss");
     },
@@ -41,7 +31,12 @@ const controlador = {
          email: "cualquiera"
      });
      res.redirect("/")
-}
+    },
+    proximoTurno: async(req, res) => {
+        let turnoSeleccionado = await baseDeDatos.orderly_turn.findOne({});
+        let turnoEliminado = await baseDeDatos.orderly_turn.destroy({where:{id:turnoSeleccionado.id}})
+        res.json(turnoSeleccionado);
+    }
 }
 
 module.exports = controlador;

@@ -1,6 +1,6 @@
 const nombre = document.getElementById("txtNombre");
 const password = document.getElementById("txtContraseña");
-const form = document.getElementById("formularioLogin");
+const form = document.querySelector("form");
 const parrafo = document.getElementById("warnings");
 
 form.addEventListener("submit", e=>{
