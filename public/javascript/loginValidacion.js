@@ -1,33 +1,24 @@
-window.onload = function () {
-    let email = document.getElementById("email"); console.log(email)
-    let password = document.getElementById("password"); console.log(password)
-    let form = document.querySelector("form"); console.log(form)
+const nombre = document.getElementById("txtNombre");
+const password = document.getElementById("txtContraseña");
+const form = document.getElementById("formularioLogin");
+const parrafo = document.getElementById("warnings");
 
-    let errores
-
-    email.addEventListener("blur", e => {
-        if (!email.value || email.value == "") {
-            errores++
-            email.nextElementSibling.classList.add("is-invalid");
-            email.nextElementSibling.classList.remove("is-valid");
-            email.nextElementSibling.innerHTML = "Debes ingresar un email";
-        } else {  
-            email.nextElementSibling.classList.replace("is-invalid", "is-valid");
-        }
-    })
-
-    password.addEventListener("blur", e => {
-        if (!password.value || password.value == "") {
-            errores++
-            password.nextElementSibling.classList.add("is-invalid");
-            password.nextElementSibling.classList.remove("is-valid");
-            password.nextElementSibling.innerHTML = "Debes ingresar tu password";
-        } else {
-            password.nextElementSibling.classList.replace("is-invalid", "is-valid");
-        }
-    })
-
-    form.addEventListener("submit", e =>
-        errores > 0 ? e.preventDefault() : ""
-    )
-}
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    let warnings = ""
+    let entrar = false
+    parrafo.innerHTML = ""
+    if(nombre.value.length < 6){
+        warnings += 'El nombre no es valido <br>'
+        entrar = true
+    }
+    if(password.value.length < 8){
+        warnings += 'La contraseña no es valida <br>'
+        entrar = true
+    }
+    if(entrar){
+        parrafo.innerHTML = warnings
+    }else{
+        parrafo.innerHTML = "Sesion Iniciada"
+    }
+})
