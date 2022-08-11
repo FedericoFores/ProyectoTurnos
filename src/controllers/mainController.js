@@ -30,15 +30,18 @@ const controlador = {
             codigo:sector
         })},
     add: function (req,res){
-        res.render ("Iniciar sesión");
+        res.render ("Iniciar sesionesss");
     },
     create: function(req,res) {
-        baseDeDatos.users.create({
-        name:req.body.name,
-        password:req.body.password
-    })
-    res.redirect("/")
-    }
+        console.log(36, req.body.user);
+    
+         baseDeDatos.users.create({
+         name: req.body.user,
+         password: req.body.pass,
+         email: "cualquiera"
+     });
+     res.redirect("/")
+}
 }
 
 module.exports = controlador;

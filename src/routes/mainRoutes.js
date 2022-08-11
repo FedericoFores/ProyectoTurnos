@@ -8,11 +8,8 @@ router.get('/login',mainController.login);
 router.get('/listadoDeTurnos',mainController.listadoDeTurnos);
 router.get('/admin/turno',mainController.turno);
 router.get('/admin/sector',mainController.sector);
-
-router.post('/login',mainController.login);
-
-router.get ("/add",mainController.add);
-router.post ("/add",mainController.create);
+//router.get('/add',mainController.add);
+router.post('/login/add', mainController.create);
 
 /*router.post('/login',userController.fuctionloLogin);*/
 
