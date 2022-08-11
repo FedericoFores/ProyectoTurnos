@@ -20,5 +20,14 @@ form.addEventListener("submit", e=>{
         parrafo.innerHTML = warnings
     }else{
         parrafo.innerHTML = "Sesion Iniciada"
-    }
+        fetch("http://localhost:3000/login/add", {
+            method : 'POST',
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify({user : nombre.value , pass: password.value})
+        }).then(respuesta => respuesta.json()).then(respuestaf => {
+        return location.href = "http://localhost:3000";
+    })}
+
 })

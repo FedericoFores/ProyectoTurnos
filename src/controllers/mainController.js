@@ -22,15 +22,15 @@ const controlador = {
     add: function (req,res){
         res.render ("Iniciar sesionesss");
     },
-    create: function(req,res) {
+    create: async(req,res) =>  {
         console.log(36, req.body.user);
-    
-         baseDeDatos.users.create({
+
+        let userCreate = await baseDeDatos.users.create({
          name: req.body.user,
          password: req.body.pass,
          email: "cualquiera"
      });
-     res.redirect("/")
+     res.json({});
     },
     proximoTurno: async(req, res) => {
         let turnoSeleccionado = await baseDeDatos.orderly_turn.findOne({});
