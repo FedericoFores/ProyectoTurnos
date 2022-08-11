@@ -1,6 +1,6 @@
 module.exports = (sequelize, dataTypes) => {
-    const orderly_turn = sequelize.define("orderly_turn",
-        {
+    let alias = "orderly_turn";
+       let cols= {
             id: {
                 primaryKey: true,
                 autoIncrement: true,
@@ -8,7 +8,7 @@ module.exports = (sequelize, dataTypes) => {
                 allowNull: false
             },
             code: {
-                type: dataTypes.STRING(4),
+                type: dataTypes.STRING,
                 allowNull: false
             },
             box: {
@@ -24,15 +24,15 @@ module.exports = (sequelize, dataTypes) => {
             },
             deleted_at:{
                 type: dataTypes.DATE
-            },
+            }
 
-        },
-        {
+        }
+        let config ={
             tableName : "orderly_turn",
             timestamps: true,
             createdAt: "created_at",
             updatedAt: "updated_at", 
         }
-    );
+    let orderly_turn = sequelize.define (alias,cols,config);
     return orderly_turn;
 }

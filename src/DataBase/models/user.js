@@ -1,24 +1,22 @@
 module.exports = (sequelize, dataTypes) => {
-    const users = sequelize.define("users",
-        {
+        let alias = "users";
+       let cols = {
             id: {
+                type:dataTypes.INTERGER,
                 primaryKey: true,
-                autoIncrement: true,
-                type: dataTypes.INTEGER,
-                allowNull: true
+                autoIncrement:true
             },
             name: {
-                type: dataTypes.STRING(25),
-                allowNull: true
+                type: dataTypes.STRING,
+        
             },
             email: {
                 type: dataTypes.TEXT(),
-                allowNull: false,
-                isEmail: true
+                isEmail: true,
             },
             password: {
                 type: dataTypes.TEXT(),
-                allowNull: false
+        
             },
             created_at:{
                 type: dataTypes.DATE
@@ -27,13 +25,13 @@ module.exports = (sequelize, dataTypes) => {
                 type: dataTypes.DATE
             }
 
-        },
-        {
+        }
+        let config ={
             tableName : "users",
             timestamps: true,
             createdAt: "created_at",
             updatedAt: "updated_at", 
         }
-    );
+    let users = sequelize.define (alias,cols.config);
     return users;
 }
