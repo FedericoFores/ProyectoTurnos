@@ -5,11 +5,11 @@ module.exports = (sequelize, dataTypes) => {
                 primaryKey: true,
                 autoIncrement: true,
                 type: dataTypes.INTEGER,
-                allowNull: false
+                allowNull: true
             },
             name: {
                 type: dataTypes.STRING(25),
-                allowNull: false
+                allowNull: true
             },
             email: {
                 type: dataTypes.TEXT(),

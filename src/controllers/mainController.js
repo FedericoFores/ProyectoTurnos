@@ -34,10 +34,10 @@ const controlador = {
     },
     create: function(req,res) {
         baseDeDatos.users.create({
-        name:req.body.txtNombr,
-        password:req.body.txtContraseña
-    });
-    res.redirect ("/");
+        name:req.body.name,
+        password:req.body.password
+    })
+    res.redirect("/")
     }
 }
 
