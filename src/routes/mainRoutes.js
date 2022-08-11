@@ -10,7 +10,4 @@ router.get('/admin/turno',mainController.turno);
 router.get('/admin/sector',mainController.sector);
 //router.get('/add',mainController.add);
 router.post('/login/add', mainController.create);
-
-/*router.post('/login',userController.fuctionloLogin);*/
-
 module.exports = router
